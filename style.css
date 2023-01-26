@@ -1,0 +1,248 @@
+:root {
+    /* button colors */
+    --button-success-color: #4CAF50;
+    --button-danger-color: #f44336;
+  }
+body{
+    background: #333333;  
+    margin: 2rem;
+    background: #82cfe9;  /* fallback for old browsers */
+}
+                    /* utility styles */
+.container{
+    width: 50vw;
+}
+.button{
+    padding: 10px;
+    border: none;
+    font-size: 22px;
+    border-radius: 5px;
+}
+main{
+    margin-top : 4rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+                       /* Clock Element styles */
+
+.clock-body{
+    background: #565a4f;  /* fallback for old browsers */
+    /*background: -webkit-linear-gradient(to right, #A43931, #1D4350);  /* Chrome 10-25, Safari 5.1-6 */
+  /*  background: linear-gradient(to right, #A43931, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */  
+    padding: 60px 20px;
+    border: 10px solid linear-gradient(to right, #108dc7, #ef8e38);
+    cursor: pointer;
+    border-radius: 116px;
+    padding: 10px 115px;
+    
+}
+
+#clock{
+    font-family: italic , sans-serif;
+    color: #ffffff;
+    font-size: 55px;
+    letter-spacing: 3px;
+    margin-left: 2.3rem;
+}
+
+                        /* Alarm Input Element Styles */
+.input_container{
+    margin-top : 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items : center;
+    justify-content: space-between;
+}
+.label{
+    color: #fff;
+    font-size: 35px;
+    font-family: 'Orbitron', sans-serif;
+    color: #4CAF50;
+}
+/* time input field */
+#alarm_input{
+    border:none;
+    border-radius: 6px;
+    font-size: 1.2rem;
+    padding: 0.7rem;
+    color: #252020;
+}
+/* submit button  */
+#submit_alarm_time{
+    padding: 10px;
+    border: none;
+    color: #fff;
+    background-color: var(--button-success-color);
+    font-size: 22px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+/*   alarm list container  */
+.alarms-li{
+    list-style-type: none;
+    font-size: 1.4rem;
+    color:#fff;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom:1.2rem;
+    letter-spacing: 5px;
+}
+
+.deleteAlarm{
+    color: #fff;
+    background-color: var(--button-danger-color);
+    cursor: pointer;
+}
+.fa-bell{
+    color : var(--button-danger-color);
+    padding-right: 2rem;
+}
+
+
+@media screen and (max-width : 1440px){
+                 /* clock body */
+    #clock{
+        font-size: 40px;
+    }
+                    /* Alarm Input Element Styles */
+
+     .input_container{
+        margin-top : 2rem;
+    }
+    .label{
+        font-size: 20px;
+    }
+    /* time input field */
+    #alarm_input{
+        font-size: 1rem;
+        padding: 0.6rem;
+    }
+    /* submit button  */
+    #submit_alarm_time{
+        padding: 6px;     
+        font-size: 20px;    
+    }
+
+}
+
+@media screen and (max-width : 1140px){
+    /* container style */
+    .container{
+        width: 55vw;
+    }
+    /* clock body */
+    #clock{
+        font-size: 35px;
+    }
+
+    /* alarmList */
+    .alarms-li{
+        font-size: 1.2rem;
+    }
+    .fa-bell{
+      font-size: 1.5rem !important;
+    }
+}
+
+@media screen and (max-width : 992px){
+            /* container style */
+    .container{
+        width: 65vw;
+    }
+         /* clock body */
+    #clock{
+        font-size: 30px;
+    }
+            /* Alarm Input Element Styles */
+
+    /* time input field */
+    #alarm_input{
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+    /* submit button  */
+    #submit_alarm_time{
+        padding: 6px;     
+        font-size: 18px;    
+    }
+     /* alarmList */
+     .alarms-li{
+        font-size: 1rem;
+    }
+    .deleteAlarm{
+      padding: 0.4rem;
+      font-size: 1rem;
+    }
+    
+}
+@media screen and (max-width : 768px){
+    /* clock body */
+    #clock{
+    font-size: 30px;
+        }
+    .container{
+        width: 70vw;
+    }
+        /* Alarm Input Element Styles */
+        .label{
+            font-size: 18px;
+        }
+        /* time input field */
+        #alarm_input{
+            font-size: 0.7rem;
+            padding: 0.4rem;
+        }
+        /* submit button  */
+        #submit_alarm_time{
+            padding: 5px;     
+            font-size: 14px;    
+        }
+
+         /* alarmList */
+     .alarms-li{
+        font-size: 12px;
+    }
+    .deleteAlarm{
+        font-size: 0.8rem;
+      }
+    
+}
+@media screen and (max-width : 592px){
+    #clock{
+        font-size: 20px;
+         }
+         .container{
+            width: 80vw;
+        }
+          /* Alarm Input Element Styles */
+        .label{
+            font-size: 12px;
+        }
+        /* time input field */
+        #alarm_input{
+            font-size: 0.6rem;
+            padding: 0.4rem;
+        }
+        /* submit button  */
+        #submit_alarm_time{
+            padding: 5px;     
+            font-size: 12px;    
+        }
+    /* alarmList */
+    .alarms-li{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .deleteAlarm{
+        font-size: 0.8rem;
+    }
+    :root {
+        /* button colors */
+        --button-success-color: #4CAF50;
+        --button-danger-color: #f44336;
+      }
+}
